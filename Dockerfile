@@ -10,7 +10,7 @@ RUN apk update && \
 RUN mkdir -p /var/www && \
     wget --no-check-certificate https://bintray.com/artifact/download/novik65/generic/ruTorrent-3.7.zip && \
     unzip ruTorrent-3.7.zip && \
-    mv ruTorrent-master /var/www/rutorrent
+    mv ruTorrent-master /var/www/rutorrent && \
     rm ruTorrent-3.7.zip
 
 EXPOSE 80
