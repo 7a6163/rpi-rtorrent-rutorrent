@@ -15,6 +15,9 @@ RUN mkdir -p /var/www && \
     rm ruTorrent-3.7.zip
 
 COPY .rtorrent.rc /root/
+COPY rutorrent-*.nginx /root/
+COPY ./config.php /var/www/rutorrent/conf/
+
 
 EXPOSE 80
 EXPOSE 443
